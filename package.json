@@ -1,0 +1,27 @@
+{
+  "name": "ai-thing",
+  "version": "1.0.0",
+  "description": "ai-thing is a utility that allows you to create React components using natural language. Simply describe the layout, components, and styles you need, and ai-thing will generate the corresponding React code for you.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/01tek/ai-thing.git"
+  },
+  "keywords": [
+    "ai",
+    "code",
+    "coding",
+    "ai",
+    "code",
+    "copilot"
+  ],
+  "author": "01TEK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/01tek/ai-thing/issues"
+  },
+  "homepage": "https://github.com/01tek/ai-thing#readme"
+}
