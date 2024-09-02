@@ -14,7 +14,8 @@ npm install ai-thing
 Using ai-thing is straightforward. Import the ai object and utilize the ai.gen template literal to describe your desired components. ai-thing interprets these descriptions and generates the corresponding React components automatically.
 
 ### Example Usage
-javascript
+
+```js
 import ai from 'ai-thing';
 
 const Layout = ai.gen`
@@ -43,6 +44,8 @@ export const App = () => {
     </Layout>
   );
 };
+```
+
 In the example above, ai-thing automatically translates the descriptive text into React components that you can directly integrate into your application.
 
 ## Key Features
