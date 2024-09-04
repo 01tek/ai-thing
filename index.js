@@ -1,24 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+// index.js
+import { parseDescription } from './logic/nlpParser';
+import { getComponent } from './logic/componentMapper';
 
-// Import the necessary modules
+const ai = {
+    gen: async (strings) => {
+        const description = strings.join(' ');
+        const componentType = parseDescription(description);
 
-// Define the aiThing function
-function aiThing(layout, components, styles) {
-    // Create a React component based on the provided layout, components, and styles
-    const App = () => {
-        return (
-            <div style={styles}>
-                {components.map((component, index) => (
-                    <div key={index}>{component}</div>
-                ))}
-            </div>
-        );
-    };
+        // Since getComponent is async, we need to await the result
+        const Component = await getComponent(componentType);
 
-    // Render the React component to the DOM
-    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
-}
+        return Component;
+    },
 
-// Export the aiThing function
-export default aiThing;
+    configureFramework: (framework) => {
+        setFramework(framework);
+    }
+};
+
+export default ai;
