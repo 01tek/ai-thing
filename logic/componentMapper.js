@@ -1,10 +1,7 @@
-// logic/componentMapper.js
-import { getFramework } from './config';
 import { runComponentCommand } from './helpers/shadcn'
 
 // Function to dynamically import components based on the current framework
-export const getComponent = async (type) => {
-  const framework = getFramework();
+export const getComponent = async (type, framework) => {
   try {
     switch (framework) {
       case 'mui':
