@@ -86,6 +86,7 @@ const App = async () => {
 - **Ant Design**
 - **Chakra UI**
 - **Semantic UI**
+- **Shadcn-ui**
 
 Feel free to suggest other frameworks or contribute to expanding the supported frameworks!
 
