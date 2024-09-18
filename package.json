@@ -1,6 +1,6 @@
 {
   "name": "ai-thing",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ai-thing is a utility that allows you to create React components using natural language. Simply describe the layout, components, and styles you need, and ai-thing will generate the corresponding React code for you.",
   "main": "index.js",
   "scripts": {
