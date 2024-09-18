@@ -2,19 +2,29 @@
 import { parseDescription } from './logic/nlpParser';
 import { getComponent } from './logic/componentMapper';
 
+let framework = 'mui';
+
+// Set the framework
+const setFramework = (newFramework) => {
+    framework = newFramework;
+};
+
+// Get the framework
+const getFramework = () => {
+    return framework;
+};
+
 const ai = {
     gen: async (strings) => {
         const description = strings.join(' ');
         const componentType = parseDescription(description);
 
-        // Since getComponent is async, we need to await the result
-        const Component = await getComponent(componentType);
+        const Component = await getComponent(componentType, getFramework());
 
         return Component;
     },
-
-    configureFramework: (framework) => {
-        setFramework(framework);
+    configureFramework: (newFramework) => {
+        setFramework(newFramework);
     }
 };
 
