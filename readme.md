@@ -78,15 +78,88 @@ const App = async () => {
 };
 ```
 
+## Helper Methods
+
+### resetFramework
+
+```js
+resetFramework: () => {
+  framework = 'mui';
+}
+```
+
+Resets the current framework to Material-UI (MUI).
+
+### getComponentType
+
+```js
+getComponentType: async (description) => {
+  return parseDescription(description);
+}
+```
+
+Parses a natural language description to determine the type of component.
+
+### getComponent
+
+```js
+getComponent: async (componentType) => {
+  return getComponent(componentType, getFramework());
+}
+```
+
+Fetches the component based on the component type and the current framework.
+
+### getFramework
+
+```js
+getFramework: () => {
+  return getFramework();
+}
+```
+
+Returns the current UI framework being used.
+
+### getFrameworks
+
+```js
+getFrameworks: () => {
+  return ['mui', 'bootstrap', 'ant-design', 'chakra', 'semantic-ui', 'materialize', 'tailwind', 'grommet', 'evergreen', 'rebass', 'baseui', 'carbon', 'fluentui', 'elasticui', 'blueprint', 'gestalt', 'reakit', 'rimble', 'theme-ui', 'vuetify', 'quasar', 'buefy', 'element', 'vue-material', 'vuesax'];
+}
+```
+
+Returns a list of all supported UI frameworks.
+
 ## Supported Frameworks
 
 **ai-thing** currently supports the following React UI frameworks:
+
 - **Material UI (MUI)**
 - **Bootstrap**
 - **Ant Design**
 - **Chakra UI**
 - **Semantic UI**
 - **Shadcn-ui**
+- **Materialize**
+- **Tailwind**
+- **Grommet**
+- **Evergreen**
+- **Rebass**
+- **BaseUI**
+- **Carbon**
+- **FluentUI**
+- **ElasticUI**
+- **Blueprint**
+- **Gestalt**
+- **Reakit**
+- **Rimble**
+- **Theme UI**
+- **Vuetify**
+- **Quasar**
+- **Buefy**
+- **Element**
+- **Vue Material**
+- **Vuesax**
 
 Feel free to suggest other frameworks or contribute to expanding the supported frameworks!
 
