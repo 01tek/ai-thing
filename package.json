@@ -26,5 +26,8 @@
   "homepage": "https://github.com/01tek/ai-thing#readme",
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "compromise": "^14.14.0"
   }
 }
